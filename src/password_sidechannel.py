@@ -14,7 +14,7 @@ average_count = 5
 # Alphabet to use when iterating over passwords
 alphabet = """ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"""
 # Max password length
-max_pass_length = 15
+max_pass_length = 23
 # Max concurrent connections
 max_connections = 5
 
@@ -23,7 +23,7 @@ def measure_time(password: str, p: pexpect.spawn) -> float:
     times = []
     for i in range(0, average_count):
         p.expect("Username: ")
-        p.sendline("ax.arwen")
+        p.sendline("sbw.shadow")
         p.expect("Password: ")
 
         p.sendline(password)
