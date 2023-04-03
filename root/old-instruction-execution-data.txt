@@ -1,0 +1,1809 @@
+00 - VALID
+Instruction size: 0 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+
+01 - VALID
+Instruction size: 3 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+02 - VALID
+Instruction size: 1 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+03 - INVALID/JUMP
+
+04 - INVALID/JUMP
+
+05 - UNKNOWN
+
+06 - VALID
+Instruction size: 2 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x03\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x03\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+07 - INVALID/JUMP
+
+08 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+09 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65534, bytearray(b'\x04\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FFFE
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+
+0A - VALID
+Instruction size: 1 bytes
+Registers after instr: [65276, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> FEFC
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+0B - INVALID/JUMP
+
+0C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+0D - INVALID/JUMP
+
+0E - VALID
+Instruction size: 1 bytes
+Registers after instr: [178, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00B2
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+0F - VALID
+Instruction size: 1 bytes
+Registers after instr: [44, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 002C
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+10 - VALID
+Instruction size: 3 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+11 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+12 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 0, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+13 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 0]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+14 - INVALID/JUMP
+
+15 - INVALID/JUMP
+
+16 - INVALID/JUMP
+
+17 - INVALID/JUMP
+
+18 - INVALID/JUMP
+
+19 - INVALID/JUMP
+
+1A - INVALID/JUMP
+
+1B - INVALID/JUMP
+
+1C - INVALID/JUMP
+
+1D - INVALID/JUMP
+
+1E - INVALID/JUMP
+
+1F - INVALID/JUMP
+
+20 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+21 - VALID
+Instruction size: 1 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+22 - VALID
+Instruction size: 1 bytes
+Registers after instr: [57346, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> E002
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+23 - VALID
+Instruction size: 1 bytes
+Registers after instr: [4096, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 1000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+24 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 89, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 0059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+25 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+26 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 57346, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> E002
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+27 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 4096, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 1000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+28 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 89, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 0059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+29 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 0, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+2A - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+2B - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 4096, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 1000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+2C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 89]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 0059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+2D - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 0]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+2E - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 57346]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> E002
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+2F - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+30 - VALID
+Instruction size: 1 bytes
+Registers after instr: [178, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00B2
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+31 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+32 - VALID
+Instruction size: 1 bytes
+Registers after instr: [57435, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> E05B
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+33 - VALID
+Instruction size: 1 bytes
+Registers after instr: [4185, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 1059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+34 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 89, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 0059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+35 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+36 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 57346, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> E002
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+37 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 4096, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 1000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+38 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57435, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> E05B
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+39 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+3A - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 49156, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> C004
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+3B - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 61442, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> F002
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+3C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4185]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 1059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+3D - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+3E - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 61442]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> F002
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+3F - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 8192]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 2000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+40 - VALID
+Instruction size: 1 bytes
+Registers after instr: [255, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+41 - VALID
+Instruction size: 1 bytes
+Registers after instr: [255, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+42 - VALID
+Instruction size: 1 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+43 - VALID
+Instruction size: 1 bytes
+Registers after instr: [67, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0043
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+44 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 255, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+45 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 255, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+46 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+47 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 71, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 0047
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+48 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 255, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+49 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 255, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+4A - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 0, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+4B - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 75, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 004B
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+4C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 255]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+4D - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 255]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+4E - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 0]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+4F - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 79]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 004F
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+50 - VALID
+Instruction size: 1 bytes
+Registers after instr: [255, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+51 - VALID
+Instruction size: 1 bytes
+Registers after instr: [255, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+52 - VALID
+Instruction size: 1 bytes
+Registers after instr: [12288, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 3000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+53 - VALID
+Instruction size: 1 bytes
+Registers after instr: [83, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0053
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+54 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 255, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+55 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 255, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+56 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 12288, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 3000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+57 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 87, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 0057
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+58 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 255, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+59 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 255, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+5A - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 12288, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 3000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+5B - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 91, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 005B
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+5C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 255]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+5D - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 255]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+5E - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 12288]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 3000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+5F - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 95]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 005F
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+60 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+61 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+62 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+63 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+64 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+65 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+66 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+67 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+68 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+69 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+6A - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+6B - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+6C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+6D - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+6E - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+6F - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+70 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+71 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+72 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+73 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+74 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+75 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+76 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+77 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+78 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+79 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+7A - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+7B - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+7C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+7D - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+7E - VALID
+Instruction size: 4 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x05\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x05\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+7F - VALID
+Instruction size: 4 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x05\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x05\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+80 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+81 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+82 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+83 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+84 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+85 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+86 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+87 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+88 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+89 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+8A - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+8B - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+8C - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+8D - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+8E - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+8F - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+90 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'\x02\x10Y\x00L\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10Y\x00L\xf2\x16\xf0\x00\x00\x00\x00')
+
+91 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'\x02\x10\x00\x00L\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x00\x00L\xf2\x16\xf0\x00\x00\x00\x00')
+
+92 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'\x02\x10\x02\xe0L\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x02\xe0L\xf2\x16\xf0\x00\x00\x00\x00')
+
+93 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'\x02\x10\x00\x10L\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x00\x10L\xf2\x16\xf0\x00\x00\x00\x00')
+
+94 - VALID
+Instruction size: 1 bytes
+Registers after instr: [62028, 0, 57346, 4096]
+Stack values: (65276, bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> F24C
+Instruction changed SP: FEFA -> FEFC
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00')
+
+95 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 62028, 57346, 4096]
+Stack values: (65276, bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> F24C
+Instruction changed SP: FEFA -> FEFC
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00')
+
+96 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 62028, 4096]
+Stack values: (65276, bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> F24C
+Instruction changed SP: FEFA -> FEFC
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00')
+
+97 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 62028]
+Stack values: (65276, bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> F24C
+Instruction changed SP: FEFA -> FEFC
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x16\xf0\x00\x00\x00\x00\x00\x00\x00\x00')
+
+98 - INVALID/JUMP
+
+99 - INVALID/JUMP
+
+9A - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+9B - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+9C - INVALID/JUMP
+
+9D - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+9E - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+9F - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+A0 - INVALID/JUMP
+
+A1 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+A2 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+A3 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+A4 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+A5 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+A6 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'\x02\x10\xfc\xfeL\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\xfc\xfeL\xf2\x16\xf0\x00\x00\x00\x00')
+
+A7 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'\x02\x10\x00\x10L\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10\x00\x10L\xf2\x16\xf0\x00\x00\x00\x00')
+
+A8 - VALID
+Instruction size: 1 bytes
+Registers after instr: [90, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 005A
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+A9 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 1, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 0001
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+AA - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57347, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> E003
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+AB - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4097]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 1001
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+AC - VALID
+Instruction size: 1 bytes
+Registers after instr: [88, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0058
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+AD - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 65535, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> FFFF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+AE - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57345, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> E001
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+AF - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4095]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 0FFF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B0 - VALID
+Instruction size: 3 bytes
+Registers after instr: [255, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B1 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 255, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B2 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 255, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B3 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 255]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B4 - VALID
+Instruction size: 3 bytes
+Registers after instr: [255, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B5 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 255, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R1: 0000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B6 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 255, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R2: E002 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B7 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 255]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R3: 1000 -> 00FF
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B8 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+B9 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+BA - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+BB - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+BC - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+BD - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+BE - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+BF - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+C0 - INVALID/JUMP
+
+C1 - INVALID/JUMP
+
+C2 - INVALID/JUMP
+
+C3 - INVALID/JUMP
+
+C4 - INVALID/JUMP
+
+C5 - VALID
+Instruction size: -4007 bytes
+================== WARNING: Suspicious offset detected! Is this a jump instruction? ================== 
+New PC: 0059
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'Z\x00L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'Z\x00L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+C6 - INVALID/JUMP
+
+C7 - VALID
+Instruction size: 53250 bytes
+================== WARNING: Suspicious offset detected! Is this a jump instruction? ================== 
+New PC: E002
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x03\xe0L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x03\xe0L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+C8 - INVALID/JUMP
+
+C9 - VALID
+Instruction size: -4007 bytes
+================== WARNING: Suspicious offset detected! Is this a jump instruction? ================== 
+New PC: 0059
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'Z\x00\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'Z\x00\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00')
+
+CA - INVALID/JUMP
+
+CB - VALID
+Instruction size: 53250 bytes
+================== WARNING: Suspicious offset detected! Is this a jump instruction? ================== 
+New PC: E002
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65272, bytearray(b'\x03\xe0\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00'))
+Instruction changed SP: FEFA -> FEF8
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x03\xe0\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00')
+
+CC - INVALID/JUMP
+
+CD - VALID
+Instruction size: 3 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+CE - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+CF - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D0 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D1 - VALID
+Instruction size: 1 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D2 - VALID
+Instruction size: 1 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D3 - VALID
+Instruction size: 1 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D4 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D5 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D6 - VALID
+Instruction size: 1 bytes
+Registers after instr: [57435, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> E05B
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D7 - VALID
+Instruction size: 1 bytes
+Registers after instr: [4185, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 1059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D8 - VALID
+Instruction size: 1 bytes
+Registers after instr: [0, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 0000
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+D9 - VALID
+Instruction size: 1 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+DA - VALID
+Instruction size: 1 bytes
+Registers after instr: [57435, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> E05B
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+DB - VALID
+Instruction size: 1 bytes
+Registers after instr: [4185, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 1059
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+DC - VALID
+Instruction size: 1 bytes
+Registers after instr: [22784, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 5900
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+DD - VALID
+Instruction size: 1 bytes
+Registers after instr: [22784, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 5900
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+DE - VALID
+Instruction size: 1 bytes
+Registers after instr: [22784, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 5900
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+DF - VALID
+Instruction size: 1 bytes
+Registers after instr: [22784, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Instruction changed register R0: 0059 -> 5900
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x02\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+E0 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+E1 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+E2 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+E3 - VALID
+Instruction size: 3 bytes
+Registers after instr: [89, 0, 57346, 4096]
+Stack values: (65274, bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00'))
+Contents of the stack changed!
+Before: bytearray(b'\x01\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+ After: bytearray(b'\x04\x10L\xf2\x16\xf0\x00\x00\x00\x00\x00\x00')
+
+E4 - INVALID/JUMP
+
+E5 - INVALID/JUMP
+
+E6 - INVALID/JUMP
+
+E7 - INVALID/JUMP
+
+E8 - INVALID/JUMP
+
+E9 - INVALID/JUMP
+
+EA - INVALID/JUMP
+
+EB - INVALID/JUMP
+
+EC - INVALID/JUMP
+
+ED - INVALID/JUMP
+
+EE - INVALID/JUMP
+
+EF - INVALID/JUMP
+
+F0 - INVALID/JUMP
+
+F1 - INVALID/JUMP
+
+F2 - INVALID/JUMP
+
+F3 - INVALID/JUMP
+
+F4 - INVALID/JUMP
+
+F5 - INVALID/JUMP
+
+F6 - INVALID/JUMP
+
+F7 - INVALID/JUMP
+
+F8 - INVALID/JUMP
+
+F9 - INVALID/JUMP
+
+FA - INVALID/JUMP
+
+FB - INVALID/JUMP
+
+FC - INVALID/JUMP
+
+FD - INVALID/JUMP
+
+FE - INVALID/JUMP
+
+FF - INVALID/JUMP
+

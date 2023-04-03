@@ -1,0 +1,30 @@
+9A:
+r     imm16
+10    10    not taken
+10    F     not taken
+F     10    taken
+
+
+9B:
+r     imm16
+10    10    not taken
+10    F     taken
+F     10    not taken
+
+
+
+9E:
+r     imm16
+10    10    not taken
+10    F     not taken
+F     10    taken
+jl
+
+
+9F:
+r     imm16
+10    10    not taken
+10    F     taken
+F     10    not taken
+jg
+

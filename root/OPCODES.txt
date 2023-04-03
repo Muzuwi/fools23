@@ -1,0 +1,162 @@
+0x00 - TRAP
+0x01 - MUL R0, imm16
+0x02 - MUL R0, R1
+0x03 - ?????????????????????????????? size: 3 bytes
+0x04 - DIV R0, R1
+0x05 - ?????????????????????????????? some kind of RET? it behaves really weirdly
+0x06 - ?????????????????????????????? size: 2 bytes
+0x07 - ILLEGAL OPCODE
+0x08 - ?????????????????????????????? size: 1 byte
+0x09 - MOV SP, imm16
+0x0A - MOV R0, SP
+0x0B - MOV SP, R0
+0x0C - ?????????????????????????????? size: 1 byte
+0x0D - ILLEGAL OPCODE
+0x0E - LSL R0
+0x0F - LSR R0
+0x10 - MOV R0, imm16
+0x11 - MOV R1, imm16
+0x12 - MOV R2, imm16
+0x13 - MOV R3, imm16
+0x14 .. 0x1F - ILLEGAL OPCODE
+
+0x20 - MOV R0, R0
+0x21 - MOV R0, R1
+0x22 - MOV R0, R2
+0x23 - MOV R0, R3
+0x24 - MOV R1, R0
+0x25 - MOV R1, R1
+0x26 - MOV R1, R2
+0x27 - MOV R1, R3
+0x28 - MOV R2, R0
+0x29 - MOV R2, R1
+0x2A - MOV R2, R2
+0x2B - MOV R2, R3
+0x2C - MOV R3, R0
+0x2D - MOV R3, R1
+0x2E - MOV R3, R2
+0x2F - MOV R3, R3
+0x30 - ADD R0, R0
+0x31 - ADD R0, R1
+0x32 - ADD R0, R2
+0x33 - ADD R0, R3
+0x34 - ADD R1, R0
+0x35 - ADD R1, R1
+0x36 - ADD R1, R2
+0x37 - ADD R1, R3
+0x38 - ADD R2, R0
+0x39 - ADD R2, R1
+0x3A - ADD R2, R2
+0x3B - ADD R2, R3
+0x3C - ADD R3, R0
+0x3D - ADD R3, R1
+0x3E - ADD R3, R2
+0x3F - ADD R3, R3
+0x40 - MOV R0, byte ptr [R0]
+0x41 - MOV R0, byte ptr [R1]
+0x42 - MOV R0, byte ptr [R2]
+0x43 - MOV R0, byte ptr [R3]
+0x44 - MOV R1, byte ptr [R0]
+0x45 - MOV R1, byte ptr [R1]
+0x46 - MOV R1, byte ptr [R2]
+0x47 - MOV R1, byte ptr [R3]
+0x48 - MOV R2, byte ptr [R0]
+0x49 - MOV R2, byte ptr [R1]
+0x4A - MOV R2, byte ptr [R2]
+0x4B - MOV R2, byte ptr [R3]
+0x4C - MOV R3, byte ptr [R0]
+0x4D - MOV R3, byte ptr [R1]
+0x4E - MOV R3, byte ptr [R2]
+0x4F - MOV R3, byte ptr [R3]
+0x50 - MOV R0, [R0]
+0x51 - MOV R0, [R1]
+0x52 - MOV R0, [R2]
+0x53 - MOV R0, [R3]
+0x54 - MOV R1, [R0]
+0x55 - MOV R1, [R1]
+0x56 - MOV R1, [R2]
+0x57 - MOV R1, [R3]
+0x58 - MOV R2, [R0]
+0x59 - MOV R2, [R1]
+0x5A - MOV R2, [R2]
+0x5B - MOV R2, [R3]
+0x5C - MOV R3, [R0]
+0x5D - MOV R3, [R1]
+0x5E - MOV R3, [R2]
+0x5F - MOV R3, [R3]
+
+...
+
+0x90 - PUSH R0
+0x91 - PUSH R1
+0x92 - PUSH R2
+0x93 - PUSH R3
+0x94 - POP R0
+0x95 - POP R1
+0x96 - POP R2
+0x97 - POP R3
+0x98 - JMP/cond[???] imm16 
+0x99 - JMP/cond[???] imm16
+0x9A - JMP/cond[???] imm16
+0x9B - JMP/cond[???] imm16
+0x9C - JMP/cond[???] imm16
+0x9D - JMP/cond[???] imm16
+0x9E - JMP/cond[???] imm16
+0x9F - JMP/cond[???] imm16
+What's the conditions for these?
+
+
+0xA0 - CALL imm16
+0xA6 - SUB SP, 2 ????
+0xA7 - SUB SP, 2 ????
+0xA8 - INC R0
+0xA9 - INC R1
+0xAA - INC R2
+0xAB - INC R3
+0xAC - DEC R0
+0xAD - DEC R1
+0xAE - DEC R2
+0xAF - DEC R3
+0xB0 - MOV R0, byte ptr [imm16] 
+0xB1 - MOV R1, byte ptr [imm16]
+0xB2 - MOV R2, byte ptr [imm16]
+0xB3 - MOV R3, byte ptr [imm16]
+0xB4 - MOV R0, [imm16]
+0xB5 - MOV R1, [imm16]
+0xB6 - MOV R2, [imm16]
+0xB7 - MOV R3, [imm16]
+0xB8 - MOV byte ptr [imm16], LOW(R0)
+0xB9 - MOV byte ptr [imm16], LOW(R0)
+0xBA - MOV byte ptr [imm16], LOW(R0)
+0xBB - MOV byte ptr [imm16], LOW(R0)
+0xBC - MOV [imm16], R0
+0xBD - MOV [imm16], R0
+0xBE - MOV [imm16], R0
+0xBF - MOV [imm16], R0
+
+0xC9 - CALL R0
+0xCA - CALL R1
+0xCB - CALL R2
+0xCC - CALL R3
+
+0xD8 - XOR R0, R0
+0xD9 - XOR R0, R1
+0xDA - XOR R0, R2
+0xDB - XOR R0, R3
+
+0xA2 - CMP R0, imm16
+0xA3 - CMP R1, imm16
+0xA4 - CMP R2, imm16
+0xA5 - CMP R3, imm16 
+
+0xE4 .. 0xFF - ILLEGAL OPCODE
+
+
+PrintStr     = 0x0008
+StrCmp       = 0x0010
+FindIndex    = 0x0018
+ConvertHex   = 0x0020
+MemCpy       = 0x0028
+ReadStr      = 0x0030
+StrTrim      = 0x0038
+MemSet       = 0x0040
