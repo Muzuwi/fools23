@@ -1,0 +1,116 @@
+1100 1100 1100 1100
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$DF02 R2=$F003 R3=$1100
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+0000 1100 1100 1100 
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$DF02 R2=$F003 R3=$1100
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+0000 0000 1100 1100 
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$DF02 R2=$F003 R3=$1100
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+FFFF FFFF 1100 1100
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$DF02 R2=$F003 R3=$1100
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+only r2/r3 are used
+
+
+FFFF FFFF 1000 1000
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$0001 R2=$1002 R3=$1000
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+FFFF FFFF 1000 1000
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$0001 R2=$1002 R3=$1000
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+FFFF FFFF 10FF 1000
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$DF03 R2=$F003 R3=$1000
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+FFFF FFFF FF10 1000
+*** BREAK INTO MONITOR AT $100F ***
+R0=$0000 R1=$00F0 R2=$0000 R3=$1000
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+
+====== after adding number pattersn ======
+
+FFFF FFFF 1100 FFFF
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$000F R2=$1110 R3=$FFFF
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+
+FFFF FFFF 1100 00FF
+
+*** BREAK INTO MONITOR AT $100F ***
+R0=$FFFF R1=$000F R2=$1110 R3=$FFFF
+SP=$FEFA [10104CF216F0000000000000]
+Ready.
+
+FindIndex
+
+R2 = Address to search
+R3 = byte to search for, zero-extended
+
+returns:
+    r0 = search successful? 0xFFFF if found, otherwise undefined?
+    r1 = offset to needle from base
+    r2 = address of the byte following the needle
+Searches max 0x20 bytes from address
+The base must be 0x10 aligned???
+
+
+
+
+
+
+
+StrCmp
+
+R2, R3 = input strings
+
+R1 = are the strings eq/???/???
+R2/R3 = internal positions
+
+
+
+
+
+
+
+
+
