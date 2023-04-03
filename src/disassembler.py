@@ -46,7 +46,6 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0x05: (1, "ret"),
 
         0x06: (2, "in r0, char"),
-        0x07: (1, " === ILLEGAL OPCODE ==="),
         0x08: (1, unknown[1]),
 
         0x09: (3, f"mov sp, ${readHex16(rom, position + 1)}"),
@@ -207,8 +206,8 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0x9D: (3, f"jne ${readHex16(rom, position + 1)}"),
         0x9E: (3, f"jl ${readHex16(rom, position + 1)}"),  # FIXME: This seems weird for some reason? But it works fine
         0x9F: (3, f"jg ${readHex16(rom, position + 1)}"),  # FIXME: This seems weird for some reason? But it works fine
-        0xA0: (3, f"fixme: call ${readHex16(rom, position + 1)}"),
-        0xA1: (3, unknown[1]),
+        0xA0: (3, f"call.eq ${readHex16(rom, position + 1)}"),
+        0xA1: (3, f"call.neq ${readHex16(rom, position + 1)}"),
         0xA2: (3, f"cmp r0, ${readHex16(rom, position + 1)}"),
         0xA3: (3, f"cmp r1, ${readHex16(rom, position + 1)}"),
         0xA4: (3, f"cmp r2, ${readHex16(rom, position + 1)}"),
@@ -255,17 +254,17 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0xCB: (1, "call r2"),
         0xCC: (1, "call r3"),
         0xCD: (3, f"and r0, ${readHex16(rom, position + 1)}"),
-        0xCE: (3, unknown[1]),
+        0xCE: (3, f"or r0, ${readHex16(rom, position + 1)}"),
         0xCF: (3, f"xor r0, ${readHex16(rom, position + 1)}"),
 
-        0xD0: (1, unknown[1]),
-        0xD1: (1, unknown[1]),
-        0xD2: (1, unknown[1]),
-        0xD3: (1, unknown[1]),
-        0xD4: (1, unknown[1]),
-        0xD5: (1, unknown[1]),
-        0xD6: (1, unknown[1]),
-        0xD7: (1, unknown[1]),
+        0xD0: (1, "and r0, r0"),
+        0xD1: (1, "and r0, r1"),
+        0xD2: (1, "and r0, r2"),
+        0xD3: (1, "and r0, r3"),
+        0xD4: (1, "or r0, r0"),
+        0xD5: (1, "or r0, r1"),
+        0xD6: (1, "or r0, r2"),
+        0xD7: (1, "or r0, r3"),
         0xD8: (1, "xor r0, r0"),
         0xD9: (1, "xor r0, r1"),
         0xDA: (1, "xor r0, r2"),
@@ -279,6 +278,11 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0xE1: (3, f"add r1, ${readHex16(rom, position + 1)}"),
         0xE2: (3, f"add r2, ${readHex16(rom, position + 1)}"),
         0xE3: (3, f"add r3, ${readHex16(rom, position + 1)}"),
+
+        # This is entirely untested and a massive stretch, but...
+        0x07: (3, " ==== secret opcode 0x7 ===="),
+        0xFC: (3, " ==== secret opcode 0xFC ===="),
+
     }.get(rom[position], unknown)
 
 
