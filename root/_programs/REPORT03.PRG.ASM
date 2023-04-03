@@ -529,7 +529,7 @@ $22B1:    5F            mov r3, [r3]
 $22B2:    B6 9D B4      mov r2, [$B49D]
 $22B5:    D7            or r0, r3
 $22B6:    A8            inc r0
-$22B7:    A0 CD DE      fixme: call $DECD
+$22B7:    A0 CD DE      call.eq $DECD
 $22BA:    8B            cmp r2, r3
 $22BB:    72            mov [r0], r2
 $22BC:    73            mov [r0], r3
@@ -575,7 +575,7 @@ $22EF:    C6            fixme: unknown opcode C6
 $22F0:    11 C1 C0      mov r1, $C0C1
 $22F3:    C9            call r0
 $22F4:    9E 5B 9C      jl $9C5B
-$22F7:    A1 2D C6      fixme: unknown opcode A1
+$22F7:    A1 2D C6      call.neq $C62D
 $22FA:    4B            mov r2, byte ptr [r3]
 $22FB:    F5            fixme: unknown opcode F5
 $22FC:    34            add r1, r0
@@ -608,7 +608,7 @@ $231A:    37            add r1, r3
 $231B:    E8            fixme: unknown opcode E8
 $231C:    72            mov [r0], r2
 $231D:    43            mov r0, byte ptr [r3]
-$231E:    A1 F3 A9      fixme: unknown opcode A1
+$231E:    A1 F3 A9      call.neq $A9F3
 $2321:    FE            fixme: unknown opcode FE
 $2322:    7F            mov [r3], r3
 $2323:    98 F3 A5      jmp $A5F3    # <None>
@@ -637,7 +637,7 @@ $2343:    29            mov r2, r1
 $2344:    B1 10 12      mov r1, byte ptr [$1210]
 $2347:    1E             === ILLEGAL OPCODE ===
 $2348:    EA            fixme: unknown opcode EA
-$2349:    A1 15 81      fixme: unknown opcode A1
+$2349:    A1 15 81      call.neq $8115
 $234C:    9C 22 5F      je $5F22
 $234F:    8A            cmp r2, r2
 $2350:    F3            fixme: unknown opcode F3

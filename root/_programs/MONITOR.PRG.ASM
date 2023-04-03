@@ -2327,7 +2327,7 @@ $2BBC:    F7            fixme: unknown opcode F7
 $2BBD:    F1            fixme: unknown opcode F1
 $2BBE:    FE            fixme: unknown opcode FE
 $2BBF:    FE            fixme: unknown opcode FE
-$2BC0:    A0 F0 A1      fixme: call $A1F0
+$2BC0:    A0 F0 A1      call.eq $A1F0
 $2BC3:    F0            fixme: unknown opcode F0
 $2BC4:    00            trap
 $2BC5:    00            trap
@@ -3153,7 +3153,7 @@ $2EFA:    21            mov r0, r1
 $2EFB:    00            trap
 $2EFC:    F8            fixme: unknown opcode F8
 $2EFD:    FE            fixme: unknown opcode FE
-$2EFE:    A1 F0 00      fixme: unknown opcode A1
+$2EFE:    A1 F0 00      call.neq $00F0
 $2F01:    00            trap
 $2F02:    00            trap
 $2F03:    00            trap
