@@ -21,7 +21,7 @@ $202A:    13 00 00      mov r3, $0000
 ; r2 = 20D6
 ; r3 = 0000
 
-$202E:    A7            push pc                     ; this is actually very relevant, this gets self-modified
+$202E:    A7            push pc                     ; this is actually very relevant, this gets self-modified $202E
 $202F:    4C            mov r3, byte ptr [r0]       ; r3 = 0x00FF
 $2030:    21            mov r0, r1                  ; nop
 $2033:    A7            push pc                     ; pushed $2033
@@ -58,6 +58,7 @@ $2069:    9D 6D 20      jne $206D
 $206C:    AB            inc r3
 $206D:    A5 04 00      cmp r3, $0004               ; four correct targets reached?
 $2070:    9C 7A 20      je $207A
+
 
 ; wrong
 $2073:    12 C3 20      mov r2, $20C3

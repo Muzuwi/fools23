@@ -35,7 +35,7 @@ $2055:    99 30 00      call $0030    # <ReadStr>
 $2058:    99 04 F1      call $F104    # <None>
 $205B:    10 01 00      mov r0, $0001
 $205E:    11 00 C0      mov r1, $C000
-$2061:    06 04         in r0, char
+$2061:    06 04         swi 4
 $2063:    96            pop r2
 $2064:    13 EC F1      mov r3, $F1EC
 $2067:    93            push r3
@@ -72,7 +72,7 @@ $209D:    99 08 00      call $0008    # <PrintStr>
 $20A0:    00            trap
 $20A1:    12 6B F8      mov r2, $F86B
 $20A4:    99 08 00      call $0008    # <PrintStr>
-$20A7:    06 03         in r0, char
+$20A7:    06 03         swi 3
 $20A9:    98 A9 F0      jmp $F0A9    # <None>
 $20AC:    99 04 F1      call $F104    # <None>
 $20AF:    12 78 F2      mov r2, $F278
@@ -859,7 +859,7 @@ $24E5:    6C            mov byte ptr [r3], low(r0)
 $24E6:    AF            dec r3
 $24E7:    6C            mov byte ptr [r3], low(r0)
 $24E8:    AF            dec r3
-$24E9:    06 02         in r0, char
+$24E9:    06 02         swi 2
 $24EB:    6C            mov byte ptr [r3], low(r0)
 $24EC:    2B            mov r2, r3
 $24ED:    A2 2E 00      cmp r0, $002E
@@ -872,7 +872,7 @@ $24FD:    97            pop r3
 $24FE:    A2 FF FF      cmp r0, $FFFF
 $2501:    9C E9 F4      je $F4E9
 $2504:    AB            inc r3
-$2505:    06 02         in r0, char
+$2505:    06 02         swi 2
 $2507:    6C            mov byte ptr [r3], low(r0)
 $2508:    2B            mov r2, r3
 $2509:    A2 2E 00      cmp r0, $002E
@@ -892,7 +892,7 @@ $2528:    64            mov byte ptr [r1], low(r0)
 $2529:    A9            inc r1
 $252A:    BD D6 FB      mov [$FBD6], r0
 $252D:    98 DF F4      jmp $F4DF    # <None>
-$2530:    06 02         in r0, char
+$2530:    06 02         swi 2
 $2532:    A2 0A 00      cmp r0, $000A
 $2535:    9D 30 F5      jne $F530
 $2538:    12 62 F8      mov r2, $F862
@@ -948,7 +948,7 @@ $25BF:    12 DD FA      mov r2, $FADD
 $25C2:    99 08 00      call $0008    # <PrintStr>
 $25C5:    10 00 00      mov r0, $0000
 $25C8:    11 00 E0      mov r1, $E000
-$25CB:    06 04         in r0, char
+$25CB:    06 04         swi 4
 $25CD:    13 00 E0      mov r3, $E000
 $25D0:    43            mov r0, byte ptr [r3]
 $25D1:    A2 00 00      cmp r0, $0000
@@ -967,7 +967,7 @@ $25E9:    AB            inc r3
 $25EA:    2B            mov r2, r3
 $25EB:    99 08 00      call $0008    # <PrintStr>
 $25EE:    10 0A 00      mov r0, $000A
-$25F1:    06 01         in r0, char
+$25F1:    06 01         swi 1
 $25F3:    97            pop r3
 $25F4:    E3 10 00      add r3, $0010
 $25F7:    A5 00 EF      cmp r3, $EF00
@@ -980,7 +980,7 @@ $2609:    12 8A F8      mov r2, $F88A
 $260C:    99 08 00      call $0008    # <PrintStr>
 $260F:    10 00 00      mov r0, $0000
 $2612:    11 00 E0      mov r1, $E000
-$2615:    06 04         in r0, char
+$2615:    06 04         swi 4
 $2617:    12 B0 EF      mov r2, $EFB0
 $261A:    13 10 00      mov r3, $0010
 $261D:    99 30 00      call $0030    # <ReadStr>
@@ -1007,7 +1007,7 @@ $264D:    AB            inc r3
 $264E:    57            mov r1, [r3]
 $264F:    91            push r1
 $2650:    11 00 E0      mov r1, $E000
-$2653:    06 04         in r0, char
+$2653:    06 04         swi 4
 $2655:    12 F0 F7      mov r2, $F7F0
 $2658:    99 08 00      call $0008    # <PrintStr>
 $265B:    12 E0 EF      mov r2, $EFE0
