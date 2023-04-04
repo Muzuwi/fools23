@@ -21,7 +21,7 @@ $202A:    13 00 00      mov r3, $0000
 ; r2 = 20D6
 ; r3 = 0000
 
-$202E:    A7            push pc                     ; this is actually very relevant
+$202E:    A7            push pc                     ; this is actually very relevant, this gets self-modified
 $202F:    4C            mov r3, byte ptr [r0]       ; r3 = 0x00FF
 $2030:    21            mov r0, r1                  ; nop
 $2033:    A7            push pc                     ; pushed $2033
@@ -63,6 +63,8 @@ $2070:    9C 7A 20      je $207A
 $2073:    12 C3 20      mov r2, $20C3
 $2076:    99 08 00      call $0008    # <PrintStr>  ; after first iteration
                                                     ; r0 = 0000; r1 = 2033; r2 = 20C3; r3 = 0000
+                                                    ; after x iteration
+                                                    ; r0 = 0000; r1 = XXXX; r2 = 20C3; r3 = 0000
 $2079:    05            ret                         ; this is a fake return, actually jumps to $202E after first iteration
 
 ; correct
