@@ -1,0 +1,11 @@
+01 
+02 - ReadChar
+03 - hangs up the connection?
+04 - ListFiles
+
+
+from MATHTEST
+
+$2040:    06 66         swi 66
+$2042:    06 64         swi 64
+$2047:    06 65         swi 65
