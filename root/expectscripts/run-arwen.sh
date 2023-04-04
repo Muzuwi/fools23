@@ -1,6 +1,7 @@
 #!/usr/bin/env expect
 
 set inputstring [lindex $argv 0];
+set timeout 100
 
 spawn nc fools2023.online 13338
 
