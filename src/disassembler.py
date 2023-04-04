@@ -45,7 +45,7 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0x04: (1, "div r0, r1"),
         0x05: (1, "ret"),
 
-        0x06: (2, "in r0, char"),
+        0x06: (2, f"swi {format(rom[position + 1], 'X')}"),
         0x08: (1, unknown[1]),
 
         0x09: (3, f"mov sp, ${readHex16(rom, position + 1)}"),
