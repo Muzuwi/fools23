@@ -1,8 +1,13 @@
-01 
+01 - memfind?
+
+R0 = byte to search for
+R2 = address to start searching?
+
+
 02 - ReadChar
 03 - hangs up the connection?
 04 - ListFiles
-
+05 - Random?
 
 from MATHTEST
 
