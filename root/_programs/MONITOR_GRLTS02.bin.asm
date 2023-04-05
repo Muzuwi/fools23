@@ -4094,44 +4094,69 @@ $EFFC:    00            trap
 $EFFD:    00            trap
 $EFFE:    00            trap
 $EFFF:    00            trap
+
+; FFF0 = 98
 $F000:    09 00 FF      mov sp, $FF00
 $F003:    10 F0 FF      mov r0, $FFF0
 $F006:    11 98 00      mov r1, $0098
 $F009:    61            mov byte ptr [r0], low(r1)
+
+; FFF1 = 7E F3
 $F00A:    A8            inc r0
 $F00B:    11 7E F3      mov r1, $F37E
 $F00E:    71            mov [r0], r1
+
+; "WELCOME TO grlts02"
 $F00F:    12 9C F6      mov r2, $F69C
 $F012:    99 08 00      call $0008    # <PrintStr>
+
+; "username: "
 $F015:    12 2D F2      mov r2, $F22D
 $F018:    99 08 00      call $0008    # <PrintStr>
+
+; read username, 0x10 chars, $F1DB
 $F01B:    13 10 00      mov r3, $0010
 $F01E:    12 DB F1      mov r2, $F1DB
 $F021:    99 30 00      call $0030    # <ReadStr>
-$F024:    12 1E F1      mov r2, $F11E
-$F027:    42            mov r0, byte ptr [r2]
-$F028:    A2 00 00      cmp r0, $0000
+
+; if empty, bail out early
+$F024:    12 1E F1      mov r2, $F11E   ; 'ax.arwen'
+$F027:    42            mov r0, byte ptr [r2]   ; first char of entered string
+$F028:    A2 00 00      cmp r0, $0000           ; check if terminator
 $F02B:    9C AC F0      je $F0AC
+
+; check if username is correct
+; r3 = username entered
+; r2 = user string
 $F02E:    13 DB F1      mov r3, $F1DB
 $F031:    92            push r2
 $F032:    99 10 00      call $0010    # <StrCmp>
 $F035:    96            pop r2
 $F036:    A2 00 00      cmp r0, $0000
 $F039:    9C 42 F0      je $F042
+
+; next check - for 'sbw.shadow'
+; this terminates the login naturally, as there are zeroes after the final entry
 $F03C:    E2 50 00      add r2, $0050
 $F03F:    98 27 F0      jmp $F027    # <None>
-$F042:    E2 10 00      add r2, $0010
-$F045:    92            push r2
+
+; Password prompt
+
+$F042:    E2 10 00      add r2, $0010   ; pass
+$F045:    92            push r2          
 $F046:    99 04 F1      call $F104    # <None>
-$F049:    12 38 F2      mov r2, $F238
+
+$F049:    12 38 F2      mov r2, $F238   ; Username OK, enter password
 $F04C:    99 08 00      call $0008    # <PrintStr>
-$F04F:    13 30 00      mov r3, $0030
-$F052:    12 EC F1      mov r2, $F1EC
+$F04F:    13 30 00      mov r3, $0030   
+$F052:    12 EC F1      mov r2, $F1EC   ; Password in F1EC, max length 0x30
 $F055:    99 30 00      call $0030    # <ReadStr>
-$F058:    99 04 F1      call $F104    # <None>
+
+; password validity check
+$F058:    99 04 F1      call $F104    # <None> ; r2 = pass buffer
 $F05B:    10 01 00      mov r0, $0001
 $F05E:    11 00 C0      mov r1, $C000
-$F061:    06 04         swi 4
+$F061:    06 04         swi 4   ; loads from the ENCTABLE.bin file
 $F063:    96            pop r2
 $F064:    13 EC F1      mov r3, $F1EC
 $F067:    93            push r3
@@ -4163,20 +4188,30 @@ $F090:    42            mov r0, byte ptr [r2]
 $F091:    A2 00 00      cmp r0, $0000
 $F094:    9C 9A F0      je $F09A
 $F097:    98 67 F0      jmp $F067    # <None>
+
+; LOGIN SUCCESSFUL
 $F09A:    12 B3 F2      mov r2, $F2B3
 $F09D:    99 08 00      call $0008    # <PrintStr>
 $F0A0:    00            trap
-$F0A1:    12 6B F8      mov r2, $F86B
+;dry stack
+$F0A1:    12 6B F8      mov r2, $F86B  
 $F0A4:    99 08 00      call $0008    # <PrintStr>
-$F0A7:    06 03         swi 3
-$F0A9:    98 A9 F0      jmp $F0A9    # <None>
+$F0A7:    06 03         swi 3    ; hang up the connection?
+$F0A9:    98 A9 F0      jmp $F0A9    # <None>  ;hang
+
+; user not found
 $F0AC:    99 04 F1      call $F104    # <None>
 $F0AF:    12 78 F2      mov r2, $F278
 $F0B2:    99 08 00      call $0008    # <PrintStr>
 $F0B5:    98 15 F0      jmp $F015    # <None>
+
+; incorrect password
 $F0B8:    12 98 F2      mov r2, $F298
 $F0BB:    99 08 00      call $0008    # <PrintStr>
 $F0BE:    98 15 F0      jmp $F015    # <None>
+
+; this is related to the password checking
+; i think this is the "rotate" the enctable part
 $F0C1:    B0 00 C0      mov r0, byte ptr [$C000]
 $F0C4:    B8 00 F1      mov byte ptr [$F100], low(r0)
 $F0C7:    B0 00 C1      mov r0, byte ptr [$C100]
@@ -4202,10 +4237,12 @@ $F0F6:    B8 FF C2      mov byte ptr [$C2FF], low(r0)
 $F0F9:    B0 03 F1      mov r0, byte ptr [$F103]
 $F0FC:    B8 FF C3      mov byte ptr [$C3FF], low(r0)
 $F0FF:    05            ret
+
+
 $F100:    9D 90 D1      jne $D190
-$F103:    98 92 12      jmp $1292    # <None>
-$F106:    65            mov byte ptr [r1], low(r1)
-$F107:    F2            fixme: unknown opcode F2
+$F103:    98 
+$F104:    92 
+$F105:    12 65 F2      mov r2, $F265 ;"Please wait"
 $F108:    99 08 00      call $0008    # <PrintStr>
 $F10B:    96            pop r2
 $F10C:    10 FF 3F      mov r0, $3FFF

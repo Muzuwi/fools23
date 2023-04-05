@@ -14,3 +14,9 @@ from MATHTEST
 $2040:    06 66         swi 66
 $2042:    06 64         swi 64
 $2047:    06 65         swi 65
+
+0x64 - returns 1337 (0x539), or sometimes other values
+0x65 - returns 2
+0x66 - ???
+
+
