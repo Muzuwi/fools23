@@ -4857,6 +4857,8 @@ $F37A:    3D            add r3, r1
 $F37B:    0A            mov r0, sp
 $F37C:    0A            mov r0, sp
 $F37D:    00            trap
+
+; trap instruction entrypoint
 $F37E:    A6            push sp
 $F37F:    BC B6 FB      mov [$FBB6], r0
 $F382:    BD B8 FB      mov [$FBB8], r0
@@ -4864,20 +4866,29 @@ $F385:    BE BA FB      mov [$FBBA], r0
 $F388:    BF BC FB      mov [$FBBC], r0
 $F38B:    94            pop r0
 $F38C:    BC BE FB      mov [$FBBE], r0
+; save current SP on the stack
 $F38F:    0A            mov r0, sp
 $F390:    50            mov r0, [r0]
+; r0 - 1
 $F391:    E0 FF FF      add r0, $FFFF
 $F394:    BC C0 FB      mov [$FBC0], r0
+
+; copy from the things we just copied?
 $F397:    11 0C 00      mov r1, $000C
 $F39A:    12 C2 FB      mov r2, $FBC2
 $F39D:    B7 BE FB      mov r3, [$FBBE]
 $F3A0:    99 28 00      call $0028    # <MemCpy>
+
+; "BREAK INTO MONITOR"
 $F3A3:    12 1C FB      mov r2, $FB1C
-$F3A6:    99 08 00      call $0008    # <PrintStr>
+$F3A6:    99 08 00      call $0008    # <PrintStr
+
 $F3A9:    10 00 00      mov r0, $0000
 $F3AC:    B8 02 E0      mov byte ptr [$E002], low(r0)
+; "Ready"
 $F3AF:    12 12 FB      mov r2, $FB12
 $F3B2:    99 08 00      call $0008    # <PrintStr>
+
 $F3B5:    12 00 E0      mov r2, $E000
 $F3B8:    13 08 00      mov r3, $0008
 $F3BB:    99 30 00      call $0030    # <ReadStr>
