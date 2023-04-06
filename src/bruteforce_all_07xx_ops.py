@@ -12,21 +12,9 @@ def run_07_with_argument(argument: int) -> bytes:
     payload += b'\x00'
 
     f = foolsocket.FoolsSocket("fools2023.online", 13337)
-    _ = f.expect(b'Ready.\n> ')
-    f.communicate(b'w\n')
-    _ = f.expect(b'address? ')
-    f.communicate(b'1000\n')
-    _ = f.expect(b'newline:\n')
-    for b in payload:
-        v = format(b, 'X').zfill(2)
-        f.communicate(v.encode('ascii'))
-    f.communicate(b'.\n')
-    _ = f.expect(b'Ready.\n')
-    f.communicate(b'x\n')
-    _ = f.expect(b'address?')
-    f.communicate(b'1000\n')
-    _ = f.expect(b'Y if so: ')
-    f.communicate(b'Y\n')
+    f.wait_for_monitor_prompt()
+    f.write_bytes(0x1000, payload)
+    f.execute_at(0x1000)
 
     data = f.expect(b"ILLEGAL OPCODE", 2.0)
     return data
