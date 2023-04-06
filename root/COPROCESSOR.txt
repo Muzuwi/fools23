@@ -11,6 +11,7 @@ same sequence, even when changing R0 between calls
 
 0664 loads r0 from somewhere
 changing between calls does not affect it
+just calling this returns 0x539 (1337)
 
 
 ... 0664 -> 0539
@@ -40,3 +41,17 @@ changing between calls does not affect it
 after calling 0665, values in 0664 change????
 
 /
+
+AN IDEA
+
+06 66 - reset "sequence"
+
+06 64 - next digit
+06 65 - check answer? 2 - wrong answer, 1 - good answer, anything else - end of sequence?
+
+
+
+
+
+
+

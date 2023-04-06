@@ -22,7 +22,10 @@ $2036:    9C 40 20      je $2040
 $2039:    12 5A 22      mov r2, $225A
 $203C:    99 08 00      call $0008    # <PrintStr>
 $203F:    05            ret
+
+; only ran once?
 $2040:    06 66         swi 66
+
 $2042:    06 64         swi 64
 $2044:    99 09 30      call $3009    # <None>
 $2047:    06 65         swi 65
@@ -31,9 +34,11 @@ $204C:    9C 56 20      je $2056
 $204F:    A2 01 00      cmp r0, $0001
 $2052:    9C 42 20      je $2042
 $2055:    05            ret
+
 $2056:    12 64 22      mov r2, $2264
 $2059:    99 08 00      call $0008    # <PrintStr>
 $205C:    05            ret
+
 $205D:    47            mov r1, byte ptr [r3]
 $205E:    6C            mov byte ptr [r3], low(r0)
 $205F:    69            mov byte ptr [r2], low(r1)
