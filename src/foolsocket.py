@@ -1,3 +1,4 @@
+import math
 import socket
 from typing import *
 
@@ -43,6 +44,36 @@ class FoolsSocket:
 
     def wait_for_monitor_prompt(self):
         _ = self.expect(b'Ready.\n> ')
+
+    """ Reads 'count' bytes from the following address using monitor commands.
+    """
+
+    def read_bytes(self, addr: int, count: int) -> bytes:
+        if addr > 0xFFFF or addr + count > 0xFFFF:
+            raise RuntimeError("Invalid address provided, maximum of 0xFFFF allowed")
+        self.communicate(b'r\n')
+
+        addr_bytes = format(addr, 'X').zfill(4).encode('ascii')
+        _ = self.expect(b'address? ')
+        self.communicate(addr_bytes + b'\n')
+
+        lines = math.ceil(count / 8)
+        _ = self.expect(b'lines? ')
+        self.communicate(str(lines).encode('ascii') + b'\n')
+
+        output: bytearray = bytearray()
+        bytes_per_line = 8
+        for i in range(0, lines):
+            header = format(addr + i * bytes_per_line, 'X').zfill(4)
+            _ = self.expect(header.encode('ascii') + b' | ', timeout=1.0)
+            data = self.expect(b'\n', timeout=1.0)
+            data = data.strip()
+            dumped_bytes = bytes.fromhex(data.decode('ascii'))
+            how_many = min(count - len(output), len(dumped_bytes))
+            output += dumped_bytes[0:how_many]
+        _ = self.expect(b'Ready.\n> ', timeout=1.0)
+
+        return bytes(output)
 
     """ Monitor helper function, writes the given payload at the specified address
         Obviously assumes the session is currently in the monitor.
