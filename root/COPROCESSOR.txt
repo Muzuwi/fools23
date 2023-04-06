@@ -1,0 +1,42 @@
+MATHTEST.PRG entry args:
+0A59, 0000, 22AA, 0006
+
+0666  (does this push registers to the coprocessor or something?)
+repeating it multiple times does not affect the output,  neither does changing R0
+
+0665 compare????
+advances some internal state?
+changing R0 does not affect it
+same sequence, even when changing R0 between calls
+
+0664 loads r0 from somewhere
+changing between calls does not affect it
+
+
+... 0664 -> 0539
+... 0665 
+... 0664 -> 4C22
+... 0665
+... 0664 -> 9E3F
+... 0665
+... 0664 -> 9610
+... 0665
+... 0664 -> 0000
+... 0665
+... 0664 -> 403D
+... 0665
+... 0664 -> 3021
+... 0665
+... 0664 -> 1E61
+... 0665
+... 0664 -> 0002
+... 0665
+... 0664 -> 0002
+... 0665
+... 0664 -> 0002
+
+0664 -> seems to be returning some internal registers, doesn't change anything
+0665 -> compare or something? r0 = 0x0002
+after calling 0665, values in 0664 change????
+
+/

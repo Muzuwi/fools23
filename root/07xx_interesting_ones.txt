@@ -1,0 +1,19 @@
+07 13:
+
+07 78:
+
+
+07 D2:
+
+0000,0000,0000,0000 - hangs, any char causes disconnect
+FFFF,FFFF,FFFF,FFFF - illegal opcode
+0000,FFFF,FFFF,FFFF - illegal opcode
+0000,0000,FFFF,FFFF - hangs
+FFFF,0000,FFFF,FFFF - hangs
+FFFF,0000,0000,FFFF - hangs
+0000,0000,0000,FFFF - hangs
+
+07 D8:
+
+
+
