@@ -120,3 +120,5 @@ go.work
 
 **/.idea/*
 
+**/__pycache__
+
