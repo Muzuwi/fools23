@@ -59,7 +59,7 @@ class FoolsSocket:
 
         lines = math.ceil(count / 8)
         _ = self.expect(b'lines? ')
-        self.communicate(str(lines).encode('ascii') + b'\n')
+        self.communicate(format(lines, 'X').zfill(4).encode('ascii') + b'\n')
 
         output: bytearray = bytearray()
         bytes_per_line = 8
