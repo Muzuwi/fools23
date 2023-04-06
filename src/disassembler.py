@@ -46,6 +46,7 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0x05: (1, "ret"),
 
         0x06: (2, f"swi {format(rom[position + 1], 'X')}"),
+        0x07: (2, f"fixme: secret opcode 0x7 {format(rom[position+1], 'X')}"),
         0x08: (1, unknown[1]),
 
         0x09: (3, f"mov sp, ${readHex16(rom, position + 1)}"),
@@ -280,7 +281,6 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0xE3: (3, f"add r3, ${readHex16(rom, position + 1)}"),
 
         # This is entirely untested and a massive stretch, but...
-        0x07: (3, " ==== secret opcode 0x7 ===="),
         0xFC: (3, " ==== secret opcode 0xFC ===="),
 
     }.get(rom[position], unknown)
