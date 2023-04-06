@@ -13,7 +13,7 @@ class FoolsSocket:
     def connect(self):
         self.sock.connect((self.host, self.port))
 
-    def expect(self, pattern: bytes, timeout: Optional[float] = None) -> Optional[bytes]:
+    def expect(self, pattern: bytes, timeout: Optional[float] = 1.0) -> Optional[bytes]:
         if timeout is not None:
             self.sock.setblocking(False)
             self.sock.settimeout(timeout)
