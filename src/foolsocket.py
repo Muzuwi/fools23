@@ -49,7 +49,7 @@ class FoolsSocket:
     """
 
     def read_bytes(self, addr: int, count: int) -> bytes:
-        if addr > 0xFFFF or addr + count > 0xFFFF:
+        if addr > 0xFFFF or addr + count - 1 > 0xFFFF:
             raise RuntimeError("Invalid address provided, maximum of 0xFFFF allowed")
         self.communicate(b'r\n')
 
