@@ -15,7 +15,8 @@ $2021:    99 38 00      call $0038    # <StrTrim>
 $2024:    12 D6 20      mov r2, $20D6
 $2027:    99 08 00      call $0008    # <PrintStr>
 $202A:    13 00 00      mov r3, $0000
-$202D:    07 A7 4C       ==== secret opcode 0x7 ====
+$202D:    07 A7         fixme: secret opcode 0x7 A7
+$202F:    4C            mov r3, byte ptr [r0]
 $2030:    21            mov r0, r1
 $2031:    FC F0 A7       ==== secret opcode 0xFC ====
 $2034:    71            mov [r0], r1
