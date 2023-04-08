@@ -43,7 +43,7 @@ class FoolsSocket:
         return sent
 
     def wait_for_monitor_prompt(self, timeout: float = 1.0):
-        _ = self.expect(b'Ready.\n> ', timeout=timeout)
+        return self.expect(b'Ready.\n> ', timeout=timeout)
 
     """ Reads 'count' bytes from the following address using monitor commands.
     """
@@ -94,7 +94,7 @@ class FoolsSocket:
             self.communicate(v.encode('ascii'))
         self.communicate(b'.\n')
 
-        _ = self.expect(b'Ready.\n> ')
+        _ = self.expect(b'Ready.\n> ', None)
 
     """ Executes code at the specified address.
     """
