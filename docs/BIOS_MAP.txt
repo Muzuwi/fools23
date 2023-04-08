@@ -51,5 +51,11 @@ F 0x00
 0x230 - 0x1000 EMPTY
  
 
-
-
+PrintStr     = 0x0008
+StrCmp       = 0x0010
+FindIndex    = 0x0018
+ConvertHex   = 0x0020
+MemCpy       = 0x0028
+ReadStr      = 0x0030
+StrTrim      = 0x0038
+MemSet       = 0x0040
