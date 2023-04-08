@@ -46,8 +46,8 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0x05: (1, "ret"),
 
         0x06: (2, f"swi {format(rom[position + 1], 'X')}"),
-        0x07: (2, f"fixme: secret opcode 0x7 {format(rom[position+1], 'X')}"),
-        0x08: (1, unknown[1]),
+        0x07: (1, "mix"),
+        0x08: (1, "unmix"),
 
         0x09: (3, f"mov sp, ${readHex16(rom, position + 1)}"),
         0x0A: (1, "mov r0, sp"),
@@ -237,9 +237,9 @@ def decode_instr(rom: bytes, position: int) -> Tuple[int, str]:
         0xBA: (3, f"mov byte ptr [${readHex16(rom, position + 1)}], low(r0)"),
         0xBB: (3, f"mov byte ptr [${readHex16(rom, position + 1)}], low(r0)"),
         0xBC: (3, f"mov [${readHex16(rom, position + 1)}], r0"),
-        0xBD: (3, f"mov [${readHex16(rom, position + 1)}], r0"),
-        0xBE: (3, f"mov [${readHex16(rom, position + 1)}], r0"),
-        0xBF: (3, f"mov [${readHex16(rom, position + 1)}], r0"),
+        0xBD: (3, f"mov [${readHex16(rom, position + 1)}], r1"),
+        0xBE: (3, f"mov [${readHex16(rom, position + 1)}], r2"),
+        0xBF: (3, f"mov [${readHex16(rom, position + 1)}], r3"),
 
         0xC0: (1, unknown[1]),
         0xC1: (1, unknown[1]),
