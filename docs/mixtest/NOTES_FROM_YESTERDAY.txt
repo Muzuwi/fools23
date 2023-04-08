@@ -1,0 +1,11 @@
+WHAT WE'VE LEARNED
+
+- dumped the "mixed" instruction stream
+- found some instructions in the "mixed" stream and their counterparts in the normal opcode set
+
+WHAT IS THE RELEVANCY OF THE SECOND BYTE OF 07?
+    -> IT IS IRRELEVANT, 07 enters, some other opcode leaves (presumably 08, but who knows what it is in the "mixed" encoding)
+WHY DOES CREATING A PAYLOAD MANUALLY NOT WORK (while the same works in MIXTEST)?
+    -> now it works after realizing above
+I AM FUCKING RETARDED
+    -> can confirm

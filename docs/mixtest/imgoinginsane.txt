@@ -1,0 +1,208 @@
+./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 130020 07 78 DF 13 13 B400D00B 00000000"
+                                                                                                 ^^ here
+this returns:
+*** BREAK INTO MONITOR AT $2019 ***
+R0=$0000 R1=$2000 R2=$2000 R3=$2000
+SP=$FFFE [1A2000000000000000000000]
+Ready.
+>
+
+
+./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 130020 07 78 DF 13 13 00 B400D00B 00000000"
+                                                                                                    ^^ here
+this returns:
+*** BREAK INTO MONITOR AT $201A ***
+R0=$FEFC R1=$2000 R2=$2000 R3=$2000
+SP=$FEFA [1B204CF216F0000000000000]
+Ready.
+
+how the fuck is it in the same spot?
+
+
+
+
+
+ ./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 130020 07 78 00 13 13 B400D00B 00000000"
+                                                                                           ^^ here
+ *** BREAK INTO MONITOR AT $2016 ***
+R0=$2000 R1=$2000 R2=$2000 R3=$B413
+SP=$FEFA [17204CF216F0000000000000]
+Ready.
+
+r3 = $B413
+but this is in normal encoding, not mixed encoding?!?!
+          07 78 00 13 [13 B4]00
+           ^       ^^^^^^^^^ mov r3, $B413, but that's normal encoding
+            \_ enter mixed encoding
+
+            
+            
+./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 130020 07 78 13 13 B400D00B 00000000" 
+hangs
+
+
+changed to 78 01
+ ./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 130020 07 78 01 13 13 B400D00B 00000000"
+                                                                                                  ^^ here
+*** BREAK INTO MONITOR AT $2019 ***
+R0=$0000 R1=$2000 R2=$2000 R3=$2000
+SP=$FFFE [1A2000000000000000000000]
+Ready.
+
+SP is broken? It loaded the wrong value? 
+
+WHAT IS GOING ON
+
+
+./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 130020 07 78 00 13 00 AB ABABABABABABABABABABABABABABABABABABAB0000"
+*** BREAK INTO MONITOR AT $2029 ***
+R0=$2000 R1=$2000 R2=$2000 R3=$AB13
+SP=$FEFA [2A204CF216F0000000000000]
+Ready.
+my resolve is dying
+
+
+
+ ./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 130020 07 78 00 13 06 AB ABABABABABABABABABABABABABABABABABABAB0000"
+ *** BREAK INTO MONITOR AT $2029 ***
+R0=$2000 R1=$2000 R2=$2000 R3=$AB19
+SP=$FEFA [2A204CF216F0000000000000]
+Ready.
+
+fgjsdklchisaghubdfo90asdhcobhsdfholsdhif
+
+
+
+
+
+./expectscripts/execute-at-2000.sh "0ABC00D0 100020 110020 120020 132220 07 78 00 00 "
+                                                                                  ^^
+*** BREAK INTO MONITOR AT $2013 ***
+R0=$2000 R1=$2000 R2=$2000 R3=$2022
+SP=$FEFA [14204CF216F0000000000000]
+Ready.
+
+"00" is treated as part of the 78 instruction
+
+
+ ./expectscripts/execute-at-2000.sh "100020 110020 120020 130020 07 7810BABA 1300 00 "
+ *** BREAK INTO MONITOR AT $2013 ***
+R0=$0010 R1=$2000 R2=$6000 R3=$4000
+SP=$FEFA [14204CF216F0000000000000]
+Ready.
+
+
+
+ 
+ 
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 2E 00 AB AB AB AB AB AB AB "
+ *** BREAK INTO MONITOR AT $AB01 ***
+R0=$0000 R1=$0000 R2=$0000 R3=$0000
+SP=$FEF8 [02AB11204CF216F000000000]
+Ready.
+ 
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 A7 2E 00 AB AB AB AB AB AB AB "
+ *** BREAK INTO MONITOR AT $AB01 ***
+R0=$0000 R1=$0000 R2=$FFFF R3=$0000
+SP=$FEF8 [02AB12204CF216F000000000]
+Ready.
+
+
+ ./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 A7 2E 14 20 AB AB 00 AB AB AB "
+                                                                                                  ^^
+*** BREAK INTO MONITOR AT $2018 ***
+R0=$0000 R1=$0000 R2=$FFFF R3=$0003
+SP=$FEF8 [192012204CF216F000000000]
+Ready.
+
+
+ ./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 A7 2E 14 20 AB AB 00 00 AB AB AB "
+                                                                                         ^^
+*** BREAK INTO MONITOR AT $2015 ***
+R0=$0000 R1=$0000 R2=$FFFF R3=$0000
+SP=$FEF8 [162012204CF216F000000000]
+Ready.
+
+78 - ??????
+A7 - ??????
+2E 14 20 - jmp $2014
+
+
+                                                                                     \/ jump target here
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 2E 14 20 FF FF FF 00 00 AB AB AB "
+                                                                                        ^^ actually jumps here 
+*** BREAK INTO MONITOR AT $2015 ***
+R0=$0000 R1=$0000 R2=$0000 R3=$0000
+SP=$FEF8 [162011204CF216F000000000]
+Ready.
+in here, 78 behaves like a single-byte instruction
+then 2E behaves like a jump
+                                                                \/ jump        \/ target
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 2E 12 20 00 00 13 13 13 00 "
+but 2E doesn't exist?!?!
+                                                                 \/ jump       \/ target
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 2E 12 20 00 00 00 13 13 13 00 "
+neither of the two actually work, what the fuck is going on
+(ILLEGAL OPCODE)
+
+
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 2E 0D 20 13 13 00 00"
+*** BREAK INTO MONITOR AT $2014 ***
+R0=$00FF R1=$0D2E R2=$0000 R3=$2011
+SP=$FEFA [15204CF216F0000000000000]
+Ready.
+in here, 78 behaves like a fucking mov r1, $0D2E
+
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 2E 0D 13 13 13 13 13 13 00 "
+*** BREAK INTO MONITOR AT $130E ***
+R0=$0000 R1=$0000 R2=$0000 R3=$0000
+SP=$FEF8 [0F1311204CF216F000000000]
+Ready.
+
+and in here, the 78 is a single-byte op
+and the 2E behaves like a jmp $130D (more like mov pc? it skips the first byte at the target)
+WHAT THE ACTUAL FUCK
+
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 2E 0D 40 13 13 00 00"
+*** BREAK INTO MONITOR AT $400E ***
+R0=$0000 R1=$0000 R2=$0000 R3=$0000
+SP=$FEF8 [0F4011204CF216F000000000]
+Ready.
+
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 2E 0D 60 13 13 00 00"
+*** BREAK INTO MONITOR AT $600E ***
+R0=$0000 R1=$0000 R2=$0000 R3=$0000
+SP=$FEF8 [0F6011204CF216F000000000]
+Ready.
+
+2E actually seems to be a single-byte instruction after all...
+
+
+
+
+
+
+let's step back
+need to discover what 78 does
+
+running it normally:
+./expectscripts/execute-at-2000.sh "100000110000120000130000 07 78 13 00 00"
+                                                                         ^^
+*** BREAK INTO MONITOR AT $2010 ***
+R0=$00FF R1=$0000 R2=$0000 R3=$0000
+SP=$FEFA [11204CF216F0000000000000]
+Ready.
+expected to break at $200F, but got $2010 instead. what the fuck?
+also, r0 is loaded
+
+./expectscripts/execute-at-2000.sh "100020110020120020130020 07 78 13 00 00"
+*** BREAK INTO MONITOR AT $2010 ***
+R0=$0010 R1=$2000 R2=$2000 R3=$2000
+SP=$FEFA [11204CF216F0000000000000]
+Ready.
+r0 is loaded from r0!
+
+
+
+
+

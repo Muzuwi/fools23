@@ -1,0 +1,259 @@
+/usr/bin/python3.10 /mnt/prog/Programming/Challenges/fools23/src/experimentation/mixtest_try_mutating_first_byte_after_mix_and_check_results.py 
+$2030 = $0x0 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x1 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x2 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x3 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x4 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x5 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x6 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x7 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x8 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x9 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xa | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xb | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xc | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xd | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xe | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x10 | None
+$2030 = $0x11 | None
+$2030 = $0x12 | None
+$2030 = $0x13 | None
+$2030 = $0x14 | None
+$2030 = $0x15 | None
+$2030 = $0x16 | None
+$2030 = $0x17 | None
+$2030 = $0x18 | None
+$2030 = $0x19 | None
+$2030 = $0x1a | None
+$2030 = $0x1b | None
+$2030 = $0x1c | None
+$2030 = $0x1d | None
+$2030 = $0x1e | None
+$2030 = $0x1f | None
+$2030 = $0x20 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x21 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0x22 | None
+$2030 = $0x23 | None
+$2030 = $0x24 | None
+$2030 = $0x25 | None
+$2030 = $0x26 | None
+$2030 = $0x27 | None
+$2030 = $0x28 | None
+$2030 = $0x29 | None
+$2030 = $0x2a | None
+$2030 = $0x2b | None
+$2030 = $0x2c | None
+$2030 = $0x2d | None
+$2030 = $0x2e | None
+$2030 = $0x2f | None
+$2030 = $0x30 | None
+$2030 = $0x31 | None
+$2030 = $0x32 | None
+$2030 = $0x33 | None
+$2030 = $0x34 | None
+$2030 = $0x35 | None
+$2030 = $0x36 | None
+$2030 = $0x37 | None
+$2030 = $0x38 | None
+$2030 = $0x39 | None
+$2030 = $0x3a | None
+$2030 = $0x3b | None
+$2030 = $0x3c | None
+$2030 = $0x3d | None
+$2030 = $0x3e | None
+$2030 = $0x3f | None
+$2030 = $0x40 | None
+$2030 = $0x41 | None
+$2030 = $0x42 | None
+$2030 = $0x43 | None
+$2030 = $0x44 | None
+$2030 = $0x45 | None
+$2030 = $0x46 | None
+$2030 = $0x47 | None
+$2030 = $0x48 | None
+$2030 = $0x49 | None
+$2030 = $0x4a | None
+$2030 = $0x4b | None
+$2030 = $0x4c | None
+$2030 = $0x4d | None
+$2030 = $0x4e | None
+$2030 = $0x4f | None
+$2030 = $0x50 | None
+$2030 = $0x51 | None
+$2030 = $0x52 | None
+$2030 = $0x53 | None
+$2030 = $0x54 | None
+$2030 = $0x55 | None
+$2030 = $0x56 | None
+$2030 = $0x57 | None
+$2030 = $0x58 | None
+$2030 = $0x59 | None
+$2030 = $0x5a | None
+$2030 = $0x5b | None
+$2030 = $0x5c | None
+$2030 = $0x5d | None
+$2030 = $0x5e | None
+$2030 = $0x5f | None
+$2030 = $0x60 | None
+$2030 = $0x61 | None
+$2030 = $0x62 | None
+$2030 = $0x63 | None
+$2030 = $0x64 | None
+$2030 = $0x65 | None
+$2030 = $0x66 | None
+$2030 = $0x67 | None
+$2030 = $0x68 | None
+$2030 = $0x69 | None
+$2030 = $0x6a | None
+$2030 = $0x6b | None
+$2030 = $0x6c | None
+$2030 = $0x6d | None
+$2030 = $0x6e | None
+$2030 = $0x6f | None
+$2030 = $0x70 | None
+$2030 = $0x71 | None
+$2030 = $0x72 | None
+$2030 = $0x73 | None
+$2030 = $0x74 | None
+$2030 = $0x75 | None
+$2030 = $0x76 | None
+$2030 = $0x77 | None
+$2030 = $0x78 | None
+$2030 = $0x79 | None
+$2030 = $0x7a | None
+$2030 = $0x7b | None
+$2030 = $0x7c | None
+$2030 = $0x7d | None
+$2030 = $0x7e | None
+$2030 = $0x7f | None
+$2030 = $0x80 | None
+$2030 = $0x81 | None
+$2030 = $0x82 | None
+$2030 = $0x83 | None
+$2030 = $0x84 | None
+$2030 = $0x85 | None
+$2030 = $0x86 | None
+$2030 = $0x87 | None
+$2030 = $0x88 | None
+$2030 = $0x89 | None
+$2030 = $0x8a | None
+$2030 = $0x8b | None
+$2030 = $0x8c | None
+$2030 = $0x8d | None
+$2030 = $0x8e | None
+$2030 = $0x8f | None
+$2030 = $0x90 | None
+$2030 = $0x91 | None
+$2030 = $0x92 | None
+$2030 = $0x93 | None
+$2030 = $0x94 | None
+$2030 = $0x95 | None
+$2030 = $0x96 | None
+$2030 = $0x97 | None
+$2030 = $0x98 | None
+$2030 = $0x99 | None
+$2030 = $0x9a | None
+$2030 = $0x9b | None
+$2030 = $0x9c | None
+$2030 = $0x9d | None
+$2030 = $0x9e | None
+$2030 = $0x9f | None
+$2030 = $0xa0 | None
+$2030 = $0xa1 | None
+$2030 = $0xa2 | None
+$2030 = $0xa3 | None
+$2030 = $0xa4 | None
+$2030 = $0xa5 | None
+$2030 = $0xa6 | None
+$2030 = $0xa7 | None
+$2030 = $0xa8 | None
+$2030 = $0xa9 | None
+$2030 = $0xaa | None
+$2030 = $0xab | None
+$2030 = $0xac | None
+$2030 = $0xad | None
+$2030 = $0xae | None
+$2030 = $0xaf | None
+$2030 = $0xb0 | None
+$2030 = $0xb1 | None
+$2030 = $0xb2 | None
+$2030 = $0xb3 | None
+$2030 = $0xb4 | None
+$2030 = $0xb5 | None
+$2030 = $0xb6 | None
+$2030 = $0xb7 | None
+$2030 = $0xb8 | None
+$2030 = $0xb9 | None
+$2030 = $0xba | None
+$2030 = $0xbb | None
+$2030 = $0xbc | None
+$2030 = $0xbd | None
+$2030 = $0xbe | None
+$2030 = $0xbf | None
+$2030 = $0xc0 | None
+$2030 = $0xc1 | None
+$2030 = $0xc2 | None
+$2030 = $0xc3 | None
+$2030 = $0xc4 | None
+$2030 = $0xc5 | None
+$2030 = $0xc6 | None
+$2030 = $0xc7 | None
+$2030 = $0xc8 | None
+$2030 = $0xc9 | None
+$2030 = $0xca | None
+$2030 = $0xcb | None
+$2030 = $0xcc | None
+$2030 = $0xcd | None
+$2030 = $0xce | None
+$2030 = $0xcf | None
+$2030 = $0xd0 | None
+$2030 = $0xd1 | None
+$2030 = $0xd2 | None
+$2030 = $0xd3 | None
+$2030 = $0xd4 | None
+$2030 = $0xd5 | None
+$2030 = $0xd6 | None
+$2030 = $0xd7 | None
+$2030 = $0xd8 | None
+$2030 = $0xd9 | None
+$2030 = $0xda | None
+$2030 = $0xdb | None
+$2030 = $0xdc | None
+$2030 = $0xdd | None
+$2030 = $0xde | None
+$2030 = $0xdf | None
+$2030 = $0xe0 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xe1 | None
+$2030 = $0xe2 | None
+$2030 = $0xe3 | None
+$2030 = $0xe4 | None
+$2030 = $0xe5 | None
+$2030 = $0xe6 | None
+$2030 = $0xe7 | None
+$2030 = $0xe8 | None
+$2030 = $0xe9 | None
+$2030 = $0xea | None
+$2030 = $0xeb | None
+$2030 = $0xec | None
+$2030 = $0xed | None
+$2030 = $0xee | None
+$2030 = $0xef | None
+$2030 = $0xf0 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf1 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf2 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf3 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf4 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf5 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf6 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf7 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf8 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xf9 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xfa | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xfb | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$2030 = $0xfc | None
+$2030 = $0xfd | None
+$2030 = $0xfe | None
+$2030 = $0xff | None
+
+Process finished with exit code 0

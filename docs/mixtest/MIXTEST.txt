@@ -1,0 +1,88 @@
+*** BREAK INTO MONITOR AT $202D ***
+R0=$0000 R1=$0000 R2=$20E4 R3=$0000
+SP=$FEFA [2E204CF216F0000000000000]
+Ready.
+
+
+07 A7 - enters some sort of mixed state?
+opcodes read from memory do not equate to opcodes actually decoded
+
+presumably, the mixed state is finished when a mixed "unmix" opcode is read
+we don't know what it is
+
+$202D - 07 A7 - start mixing state
+$202F - doesn't trap (mixed)
+
+$2063 - traps        (unmixed)
+$2066 - traps        (unmixed)
+
+
+==== JUST PONDERING, NOT ACTUAL INFO ====
+
+MIXCTR = 0x0
+07 XX: MIXCTR <= XX
+
+read byte <= byte ^ MIXCTR
+MIXCTR <= MIXCTR +-*^ (byte)
+
+inc r2 = 0xAA
+this would need to be 0x55
+after, this, MIXCTR <= A9 | 54 | AB | 56 | AA | 55
+
+A1 | 5C | A3 | 5E | A2 | 5D
+nope, this doesn't work :(
+
+============================================
+
+0x5C UNMIX
+
+0xE0 - INC R0
+0xF8 - INC R1
+0xC9 - INC R2
+0x8A - INC R3
+0x64 - DEC R0
+0x67 - DEC R1
+0xF5 - DEC R2
+0X09 - DEC R3
+
+0x2B - mov r0, r1
+0xC6 - mov r0, r2
+0xA4 - mov r0, r3
+
+0xA1 - mov r0, imm16
+
+
+state after executing 204C  b'*** BREAK INTO MONITOR AT $204E ***\nR0=$5480 R1=$214D R2=$E002 R3=$2000\nSP=$FEFA [4F204CF216F0000000000000]\nReady.\n> '
+state after executing 204D  b'*** BREAK INTO MONITOR AT $204F ***\nR0=$5480 R1=$214C R2=$E002 R3=$2000\nSP=$FEFA [50204CF216F0000000000000]\nReady.\n> '
+
+now mutating 204d to find some more ops
+
+COMPARE RESULTS WITH THIS:
+R0=$5480 R1=$214D R2=$E002 R3=$2000\nSP=$FEFA [4F204CF216F0000000000000] 
+THE PC MUST BE $204F TO GUARANTEE PROPER SINGLE-STEP
+
+
+actually, the above seem to be completely wrong?!
+what the fuck is going on
+
+the immediates don't seem to be affected by the mixing
+0xA7 - mov r1, imm16
+now 0x78 is the terminator? wtf?
+
+78 00 terminates mixing mode?
+13 also terminates mixing mode?! (no second byte required)
+
+
+=======================================
+
+0x29 - mul r0, r1
+
+
+
+password:
+
+_qX_______
+
+
+
+

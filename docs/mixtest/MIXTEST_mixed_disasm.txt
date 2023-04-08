@@ -1,0 +1,94 @@
+; PART 1
+
+A7 4C 21
+    - mov r1, $214C
+FC 
+    - inc r1  ($214D)
+F0 
+    - mov r0, [r1]
+A7 71 58 
+    - mov r1, $5871  ; 'Xq'
+1A
+    - cmp r0, r1
+65 3B 20
+    - jne $203B
+DF
+    - inc r3
+
+; 214C = ???????
+; 214D = q
+; 214E = X
+    
+    
+; PART 2
+
+@label_203B:
+78
+    - what the actual fuck
+    - skips over the entire mixed instruction stream
+    - ~~~placing a bunch of nops after - still finds the "end" marker 0x13~~~
+    - ~~~jumps _ONE PAST_ the end marker (0x13)~~~
+    - correction:
+    - executes UNTIL a 0x0 byte is read as the opcode (not data bytes)
+    - !! completely different instructions !!
+    - what the fuck
+    - tldr; begin instruction set $78
+37 4F 21
+    - mov r0, [$214F]   ; this must be '9f'
+FC C2 54
+    - xor r0, $54C2     
+5F A4 6D
+    - cmp r0, $6DA4     ; m¤
+DD 49 20
+    - jne $2049
+49
+    - inc r3 
+
+; 214F = f
+; 2150 = 9
+
+; PART 3
+; R0 = $6DA4
+; R1 = $5871
+; R2 = $20E4
+; R3 = $0002  (success count)
+; SP=$FEFA [4A204CF216F0000000000000]
+
+@label_2049:
+95 - begin instruction set $95
+8B 4D 21
+    - mov r1, $214D
+67 
+    - dec r1
+2A 
+    - movb r0, [r1]
+F2 
+    - lsl r0   
+F2 
+    - lsl r0
+5B 1C 01 
+    - cmp r0, $011C
+3B 58 20 
+    - jne $2058
+8A 
+    - inc r3
+
+; 214C = G
+
+    
+; PART 4 
+@label_2058:
+4D FF FF
+    - mov r0, $FFFF
+64      @label_205B
+    - dec r0
+5B 01 02
+    - cmp r0,  $0201
+3B 5B 20
+    jne $205B
+5C - end instruction set $95
+
+$2063:    B0 51 21      mov r0, byte ptr [$2151]
+$2066:    A2 00 00      cmp r0, $0000
+$2069:    9D 6D 20      jne $206D
+$206C:    AB            inc r3

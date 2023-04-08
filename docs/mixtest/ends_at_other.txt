@@ -1,0 +1,74 @@
+/usr/bin/python3.10 /mnt/prog/Programming/Challenges/fools23/src/mixtest_mutate_at_offset.py 
+$003C = $0x0 | b'*** BREAK INTO MONITOR AT $203D ***\nR0=$00FF R1=$0000 R2=$E002 R3=$2000\nSP=$FEFA [3E204CF216F0000000000000]\nReady.\n> '
+$003C = $0x3 | None
+$003C = $0x5 | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEFA [0C004CF216F0000000000000]\nReady.\n> '
+$003C = $0x6 | None
+$003C = $0xb | None
+$003C = $0xc | b'*** BREAK INTO MONITOR AT $204A ***\nR0=$0000 R1=$F24C R2=$E002 R3=$2000\nSP=$FEFC [4B2016F00000000000000000]\nReady.\n> '
+$003C = $0x11 | None
+$003C = $0x17 | None
+$003C = $0x1a | None
+$003C = $0x29 | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEF8 [0C003D204CF216F000000000]\nReady.\n> '
+$003C = $0x2a | None
+$003C = $0x2b | None
+$003C = $0x2e | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEF8 [0C003F204CF216F000000000]\nReady.\n> '
+$003C = $0x2f | None
+$003C = $0x38 | None
+$003C = $0x3a | None
+$003C = $0x40 | None
+$003C = $0x45 | None
+$003C = $0x4c | None
+$003C = $0x4e | None
+$003C = $0x53 | None
+$003C = $0x55 | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEF8 [0C003D204CF216F000000000]\nReady.\n> '
+$003C = $0x56 | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEFA [0C004CF216F0000000000000]\nReady.\n> '
+$003C = $0x58 | None
+$003C = $0x63 | None
+$003C = $0x67 | None
+$003C = $0x68 | b'*** BREAK INTO MONITOR AT $FFF6 ***\nR0=$00FE R1=$0000 R2=$E002 R3=$2000\nSP=$FEF8 [F7FF3D204CF216F000000000]\nReady.\n> '
+$003C = $0x6b | None
+$003C = $0x6f | b'*** BREAK INTO MONITOR AT $99F8 ***\nR0=$00FE R1=$0000 R2=$E002 R3=$2000\nSP=$FEFC [F99916F00000000000000000]\nReady.\n> '
+$003C = $0x73 | None
+$003C = $0x79 | None
+$003C = $0x7e | None
+$003C = $0x85 | None
+$003C = $0x88 | None
+$003C = $0x89 | None
+$003C = $0x8c | None
+$003C = $0x8e | None
+$003C = $0x91 | b'*** BREAK INTO MONITOR AT $204A ***\nR0=$0000 R1=$F24C R2=$E002 R3=$2000\nSP=$FEFC [4B2016F00000000000000000]\nReady.\n> '
+$003C = $0x95 | None
+$003C = $0x96 | b'*** BREAK INTO MONITOR AT $E005 ***\nR0=$FEFA R1=$0000 R2=$E002 R3=$2000\nSP=$FEF8 [06E03D204CF216F000000000]\nReady.\n> '
+$003C = $0x9e | None
+$003C = $0xa0 | None
+$003C = $0xa1 | ILLEGAL OPCODE, mutation not valid!
+$003C = $0xa2 | None
+$003C = $0xa8 | None
+$003C = $0xab | None
+$003C = $0xac | None
+$003C = $0xb6 | None
+$003C = $0xb7 | None
+$003C = $0xbc | ILLEGAL OPCODE, mutation not valid!
+$003C = $0xc4 | b'*** BREAK INTO MONITOR AT $204A ***\nR0=$0000 R1=$F24C R2=$E002 R3=$2000\nSP=$FEFC [4B2016F00000000000000000]\nReady.\n> '
+$003C = $0xc9 | None
+$003C = $0xca | None
+$003C = $0xcc | None
+$003C = $0xd0 | None
+$003C = $0xd3 | None
+$003C = $0xd4 | None
+$003C = $0xda | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEFA [0C004CF216F0000000000000]\nReady.\n> '
+$003C = $0xdd | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEFA [0C004CF216F0000000000000]\nReady.\n> '
+$003C = $0xde | None
+$003C = $0xe0 | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEF8 [0C003F204CF216F000000000]\nReady.\n> '
+$003C = $0xe1 | b'*** BREAK INTO MONITOR AT $E005 ***\nR0=$FEFC R1=$0000 R2=$E002 R3=$2000\nSP=$FEFA [06E04CF216F0000000000000]\nReady.\n> '
+$003C = $0xe5 | None
+$003C = $0xea | None
+$003C = $0xee | None
+$003C = $0xef | None
+$003C = $0xf1 | None
+$003C = $0xf6 | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEFA [0C004CF216F0000000000000]\nReady.\n> '
+$003C = $0xf8 | b'*** BREAK INTO MONITOR AT $000B ***\nR0=$0098 R1=$0000 R2=$E002 R3=$2000\nSP=$FEF8 [0C003F204CF216F000000000]\nReady.\n> '
+$003C = $0xf9 | ILLEGAL OPCODE, mutation not valid!
+$003C = $0xfb | None
+
+Process finished with exit code 0

@@ -1,0 +1,259 @@
+/usr/bin/python3.10 /mnt/prog/Programming/Challenges/fools23/src/experimentation/mixtest_try_mutating_first_byte_after_mix_and_check_results.py 
+$205F = $0x0 | None
+$205F = $0x1 | None
+$205F = $0x2 | None
+$205F = $0x3 | None
+$205F = $0x4 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x5 | None
+$205F = $0x6 | None
+$205F = $0x7 | None
+$205F = $0x8 | None
+$205F = $0x9 | None
+$205F = $0xa | None
+$205F = $0xb | None
+$205F = $0xc | None
+$205F = $0xd | None
+$205F = $0xe | None
+$205F = $0xf | None
+$205F = $0x10 | None
+$205F = $0x11 | None
+$205F = $0x12 | None
+$205F = $0x13 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x14 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x15 | None
+$205F = $0x16 | None
+$205F = $0x17 | None
+$205F = $0x18 | None
+$205F = $0x19 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x1a | None
+$205F = $0x1b | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x1c | None
+$205F = $0x1d | None
+$205F = $0x1e | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$0000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x1f | None
+$205F = $0x20 | None
+$205F = $0x21 | None
+$205F = $0x22 | None
+$205F = $0x23 | None
+$205F = $0x24 | None
+$205F = $0x25 | None
+$205F = $0x26 | None
+$205F = $0x27 | None
+$205F = $0x28 | None
+$205F = $0x29 | None
+$205F = $0x2a | None
+$205F = $0x2b | None
+$205F = $0x2c | None
+$205F = $0x2d | None
+$205F = $0x2e | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$0000 R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x2f | None
+$205F = $0x30 | None
+$205F = $0x31 | None
+$205F = $0x32 | None
+$205F = $0x33 | None
+$205F = $0x34 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x35 | None
+$205F = $0x36 | None
+$205F = $0x37 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x38 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x39 | None
+$205F = $0x3a | None
+$205F = $0x3b | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x3c | None
+$205F = $0x3d | None
+$205F = $0x3e | None
+$205F = $0x3f | None
+$205F = $0x40 | None
+$205F = $0x41 | None
+$205F = $0x42 | None
+$205F = $0x43 | None
+$205F = $0x44 | None
+$205F = $0x45 | None
+$205F = $0x46 | None
+$205F = $0x47 | None
+$205F = $0x48 | None
+$205F = $0x49 | None
+$205F = $0x4a | None
+$205F = $0x4b | None
+$205F = $0x4c | None
+$205F = $0x4d | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$FF00 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x4e | None
+$205F = $0x4f | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x50 | None
+$205F = $0x51 | None
+$205F = $0x52 | None
+$205F = $0x53 | None
+$205F = $0x54 | None
+$205F = $0x55 | None
+$205F = $0x56 | None
+$205F = $0x57 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$FF00\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x58 | None
+$205F = $0x59 | None
+$205F = $0x5a | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$FF00 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x5b | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x5c | b'*** BREAK INTO MONITOR AT $2060 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [612000000000000000000000]\nReady.\n> '
+$205F = $0x5d | None
+$205F = $0x5e | None
+$205F = $0x5f | None
+$205F = $0x60 | None
+$205F = $0x61 | None
+$205F = $0x62 | None
+$205F = $0x63 | None
+$205F = $0x64 | None
+$205F = $0x65 | None
+$205F = $0x66 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$FF00 R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x67 | None
+$205F = $0x68 | None
+$205F = $0x69 | None
+$205F = $0x6a | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x6b | None
+$205F = $0x6c | None
+$205F = $0x6d | None
+$205F = $0x6e | None
+$205F = $0x6f | None
+$205F = $0x70 | None
+$205F = $0x71 | None
+$205F = $0x72 | None
+$205F = $0x73 | None
+$205F = $0x74 | None
+$205F = $0x75 | None
+$205F = $0x76 | None
+$205F = $0x77 | None
+$205F = $0x78 | None
+$205F = $0x79 | None
+$205F = $0x7a | None
+$205F = $0x7b | None
+$205F = $0x7c | None
+$205F = $0x7d | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x7e | None
+$205F = $0x7f | None
+$205F = $0x80 | None
+$205F = $0x81 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x82 | None
+$205F = $0x83 | None
+$205F = $0x84 | None
+$205F = $0x85 | None
+$205F = $0x86 | None
+$205F = $0x87 | None
+$205F = $0x88 | None
+$205F = $0x89 | None
+$205F = $0x8a | None
+$205F = $0x8b | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$FF00 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x8c | None
+$205F = $0x8d | None
+$205F = $0x8e | None
+$205F = $0x8f | None
+$205F = $0x90 | None
+$205F = $0x91 | None
+$205F = $0x92 | None
+$205F = $0x93 | None
+$205F = $0x94 | None
+$205F = $0x95 | None
+$205F = $0x96 | None
+$205F = $0x97 | None
+$205F = $0x98 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$FF00 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0x99 | None
+$205F = $0x9a | None
+$205F = $0x9b | None
+$205F = $0x9c | None
+$205F = $0x9d | None
+$205F = $0x9e | None
+$205F = $0x9f | None
+$205F = $0xa0 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$FF00 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xa1 | None
+$205F = $0xa2 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xa3 | None
+$205F = $0xa4 | None
+$205F = $0xa5 | None
+$205F = $0xa6 | None
+$205F = $0xa7 | None
+$205F = $0xa8 | None
+$205F = $0xa9 | None
+$205F = $0xaa | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$1F00\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xab | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xac | None
+$205F = $0xad | None
+$205F = $0xae | None
+$205F = $0xaf | None
+$205F = $0xb0 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$0000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xb1 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$FF00 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xb2 | None
+$205F = $0xb3 | None
+$205F = $0xb4 | None
+$205F = $0xb5 | None
+$205F = $0xb6 | None
+$205F = $0xb7 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xb8 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xb9 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xba | None
+$205F = $0xbb | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xbc | None
+$205F = $0xbd | None
+$205F = $0xbe | None
+$205F = $0xbf | None
+$205F = $0xc0 | None
+$205F = $0xc1 | None
+$205F = $0xc2 | None
+$205F = $0xc3 | None
+$205F = $0xc4 | None
+$205F = $0xc5 | None
+$205F = $0xc6 | None
+$205F = $0xc7 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xc8 | None
+$205F = $0xc9 | None
+$205F = $0xca | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xcb | None
+$205F = $0xcc | None
+$205F = $0xcd | None
+$205F = $0xce | None
+$205F = $0xcf | None
+$205F = $0xd0 | None
+$205F = $0xd1 | None
+$205F = $0xd2 | None
+$205F = $0xd3 | None
+$205F = $0xd4 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xd5 | None
+$205F = $0xd6 | None
+$205F = $0xd7 | None
+$205F = $0xd8 | None
+$205F = $0xd9 | None
+$205F = $0xda | None
+$205F = $0xdb | None
+$205F = $0xdc | None
+$205F = $0xdd | None
+$205F = $0xde | None
+$205F = $0xdf | None
+$205F = $0xe0 | None
+$205F = $0xe1 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$FFFF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xe2 | None
+$205F = $0xe3 | None
+$205F = $0xe4 | None
+$205F = $0xe5 | None
+$205F = $0xe6 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$0000 R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xe7 | None
+$205F = $0xe8 | None
+$205F = $0xe9 | None
+$205F = $0xea | None
+$205F = $0xeb | None
+$205F = $0xec | None
+$205F = $0xed | None
+$205F = $0xee | None
+$205F = $0xef | None
+$205F = $0xf0 | None
+$205F = $0xf1 | None
+$205F = $0xf2 | None
+$205F = $0xf3 | None
+$205F = $0xf4 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xf5 | None
+$205F = $0xf6 | None
+$205F = $0xf7 | None
+$205F = $0xf8 | None
+$205F = $0xf9 | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$63FE [642000000000000000000000]\nReady.\n> '
+$205F = $0xfa | None
+$205F = $0xfb | None
+$205F = $0xfc | None
+$205F = $0xfd | None
+$205F = $0xfe | None
+$205F = $0xff | b'*** BREAK INTO MONITOR AT $2063 ***\nR0=$0000 R1=$0000 R2=$00FF R3=$2000\nSP=$FEFE [642000000000000000000000]\nReady.\n> '
+
+Process finished with exit code 0
