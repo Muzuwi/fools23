@@ -20,14 +20,14 @@ $F022:    12 3F F7      mov r2, $F73F
 $F025:    99 38 00      call $0038    # <StrTrim>
 $F028:    99 36 F0      call $F036    # <None>
 
-; Welcome, <username>
+; Welcome
 $F02B:    12 75 F2      mov r2, $F275
 $F02E:    99 08 00      call $0008    # <PrintStr>
 $F031:    06 03         swi 3
 
 $F033:    98 33 F0      jmp $F033    # <None>
 
-; XXX: wtf is it printing????
+; <username>
 $F036:    12 98 F1      mov r2, $F198
 $F039:    99 08 00      call $0008    # <PrintStr>
 
@@ -36,6 +36,7 @@ $F03F:    99 08 00      call $0008    # <PrintStr>
 ; selection menu strings
 $F042:    12 AA F1      mov r2, $F1AA
 $F045:    99 08 00      call $0008    # <PrintStr>
+; read selection
 $F048:    12 53 F7      mov r2, $F753
 $F04B:    99 A7 F0      call $F0A7    # <None>
 ; choice

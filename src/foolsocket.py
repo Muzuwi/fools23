@@ -33,6 +33,18 @@ class FoolsSocket:
                 break
         return b''.join(chunks)
 
+    def read_until_eof(self) -> bytes:
+        chunks = []
+        while True:
+            # don't let anybody see this, ever
+            chunk = self.sock.recv(1)
+            if chunk == b'':
+                # eof
+                return b''.join(chunks)
+
+            # not like this
+            chunks.append(chunk)
+
     def communicate(self, message: bytes) -> int:
         sent = 0
         while sent < len(message):
